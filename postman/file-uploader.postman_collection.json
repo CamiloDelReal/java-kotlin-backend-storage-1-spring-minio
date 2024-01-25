@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "8dcfd33f-0c20-468f-8d5e-202989abeba6",
+		"name": "File Uploader",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20647569"
+	},
+	"item": [
+		{
+			"name": "Upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/darklink/Downloads/Software+Architecture+&+System+Design+Practical+Case+Studies+-+Course+Workbook.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/uploader",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"uploader"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

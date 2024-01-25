@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: file-uploader-spring-minio
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+minio:
+  endpoint: http://localhost:9000
+  accessKey: 13hEKk2sJVRbSvKRSyXh
+  secretKey: jIJyct7tkXdBuPKsvTfZfNuHCpREhhUnx8qybv1P

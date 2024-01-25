@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+  minio1:
+    image: quay.io/minio/minio:RELEASE.2023-12-14T18-51-57Z
+    command: server /data --console-address ":9001"
+    ports:
+      - 9000:9000
+      - 9001:9001
+    environment:
+      MINIO_ROOT_USER: root
+      MINIO_ROOT_PASSWORD: 1234567890
+    healthcheck:
+      test: ["CMD", "mc", "ready", "local"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
